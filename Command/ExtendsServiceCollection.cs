@@ -6,7 +6,7 @@ namespace LightestNight.System.Command
 {
     public static class ExtendsServiceCollection
     {
-        public static IServiceCollection AddCommandValidators(IServiceCollection services, params Assembly[] validatorAssemblies)
+        public static IServiceCollection AddCommandValidators(this IServiceCollection services, params Assembly[] validatorAssemblies)
         {
             AssemblyScanning.RegisterServices(services, validatorAssemblies, new[]
             {
