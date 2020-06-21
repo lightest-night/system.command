@@ -5,6 +5,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{220CA921-5665-413A-AD7E-EFE01883F201}"
 ProjectSection(SolutionItems) = preProject
 	README.md = README.md
+	GitVersion.yml = GitVersion.yml
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{8B2375D0-659F-48B2-820E-985D1C0FF78B}"
+ProjectSection(SolutionItems) = preProject
+	.github\workflows\CI.yml = .github\workflows\CI.yml
+	.github\workflows\Release.yml = .github\workflows\Release.yml
 EndProjectSection
 EndProject
 Global
@@ -17,5 +24,7 @@ Global
 		{BD4E6BF1-8B27-4D2A-9CAE-2097E81DC878}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD4E6BF1-8B27-4D2A-9CAE-2097E81DC878}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD4E6BF1-8B27-4D2A-9CAE-2097E81DC878}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal

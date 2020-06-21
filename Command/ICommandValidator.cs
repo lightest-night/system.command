@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
-using Domain.Exceptions;
+using LightestNight.System.Domain.Exceptions;
 
 namespace LightestNight.System.Command
 {
@@ -13,6 +12,6 @@ namespace LightestNight.System.Command
         /// <param name="command">The command to validate</param>
         /// <param name="cancellationToken">Any <see cref="CancellationToken" /> to use to marshal the request</param>
         /// <returns>An empty collection if no validation errors are found, or a collection of <see cref="InvariantError" /></returns>
-        Task<IEnumerable<InvariantError>> Validate(TCommand command, CancellationToken cancellationToken);
+        Task<DomainException> Validate(TCommand command, CancellationToken cancellationToken);
     }
 }
